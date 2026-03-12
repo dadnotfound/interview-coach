@@ -1,0 +1,198 @@
+{
+  "meta": {
+    "version": "1.0.0-mvp",
+    "scenario_id": "scenario_001",
+    "scenario_name": "产品经理初试",
+    "industry": "互联网/科技",
+    "role": "产品经理",
+    "difficulty": "L1",
+    "estimated_duration": "30 分钟",
+    "question_count": 5,
+    "created_at": "2026-03-11"
+  },
+  "hidden_issues": [
+    {
+      "type": "过度包装",
+      "description": "简历上的'核心项目'实际参与度 < 30%",
+      "trigger_signals": ["停顿", "模糊回答", "转移话题"],
+      "detection_method": "追问具体角色和贡献"
+    }
+  ],
+  "questions": [
+    {
+      "id": "tech-pm-001-01",
+      "question": "请介绍一个你负责的产品项目",
+      "category": "项目经验",
+      "difficulty": "L1",
+      "tags": ["STAR", "追问", "产品思维"],
+      "triggers_hidden_issue": true,
+      "follow_up_questions": [
+        "具体是什么场景？",
+        "你在团队中的角色是什么？",
+        "你具体负责哪部分？",
+        "遇到了什么挑战？"
+      ],
+      "expected_answer_points": [
+        "项目背景和目标",
+        "个人角色和贡献（具体）",
+        "遇到的挑战",
+        "解决方案和结果（量化）"
+      ],
+      "red_flags": [
+        "回答模糊，无具体细节",
+        "夸大个人贡献",
+        "无法量化结果"
+      ],
+      "ai_candidate_response": {
+        "surface": "我负责过一个千万级用户的产品，主要负责功能设计和用户体验优化。通过数据分析，我们发现用户留存提升了 30%。",
+        "under_pressure": "呃...主要是配合产品经理做一些辅助工作，核心功能是另一个同事主导的。具体数据记不清了，主要是通过自然增长。",
+        "exposed": true
+      }
+    },
+    {
+      "id": "tech-pm-001-02",
+      "question": "你怎么定义产品成功？",
+      "category": "产品思维",
+      "difficulty": "L1",
+      "tags": ["产品思维", "追问"],
+      "triggers_hidden_issue": false,
+      "follow_up_questions": [
+        "你用什么指标衡量？",
+        "为什么选择这些指标？",
+        "用户价值和商业价值怎么平衡？"
+      ],
+      "expected_answer_points": [
+        "明确的成功指标",
+        "数据驱动思维",
+        "用户价值优先",
+        "商业价值考虑"
+      ],
+      "red_flags": [
+        "只有模糊描述（'做得好'）",
+        "没有具体指标",
+        "忽视用户价值"
+      ],
+      "ai_candidate_response": {
+        "surface": "我认为产品成功要看用户增长、留存和收入。我会综合考虑这些指标，既要满足用户需求，也要实现商业目标。",
+        "under_pressure": null,
+        "exposed": false
+      }
+    },
+    {
+      "id": "tech-pm-001-03",
+      "question": "你遇到过最大的产品挑战是什么？",
+      "category": "问题解决",
+      "difficulty": "L2",
+      "tags": ["STAR", "追问", "抗压能力"],
+      "triggers_hidden_issue": true,
+      "follow_up_questions": [
+        "具体是什么挑战？",
+        "你的角色是什么？",
+        "你采取了什么行动？",
+        "结果如何？"
+      ],
+      "expected_answer_points": [
+        "具体挑战描述",
+        "个人行动（主动）",
+        "解决方案",
+        "量化结果",
+        "反思和学习"
+      ],
+      "red_flags": [
+        "没有具体案例",
+        "只是被动执行",
+        "没有量化结果",
+        "没有反思"
+      ],
+      "ai_candidate_response": {
+        "surface": "最大的挑战是在资源有限的情况下，我们还是要快速上线产品。我当时负责协调设计和开发团队，通过优先级管理，我们按时完成了上线。",
+        "under_pressure": "其实主要是团队其他成员在做，我主要是协助沟通。结果还不错，产品按时上线了。",
+        "exposed": true
+      }
+    },
+    {
+      "id": "tech-pm-001-04",
+      "question": "你怎么和研发团队协作？",
+      "category": "协作能力",
+      "difficulty": "L1",
+      "tags": ["协作", "追问"],
+      "triggers_hidden_issue": false,
+      "follow_up_questions": [
+        "你用什么沟通方式？",
+        "怎么处理分歧？",
+        "怎么平衡需求和可行性？"
+      ],
+      "expected_answer_points": [
+        "清晰的沟通方式",
+        "尊重专业意见",
+        "数据驱动决策",
+        "共赢思维"
+      ],
+      "red_flags": [
+        "只强调自己的需求",
+        "不倾听技术意见",
+        "沟通方式单一"
+      ],
+      "ai_candidate_response": {
+        "surface": "我会定期和研发团队开会，了解技术进展和困难。如果遇到分歧，我会用数据和用户需求来支持我的决策，同时也会考虑技术可行性。",
+        "under_pressure": null,
+        "exposed": false
+      }
+    },
+    {
+      "id": "tech-pm-001-05",
+      "question": "你为什么从上家公司离职？",
+      "category": "离职原因",
+      "difficulty": "L1",
+      "tags": ["追问", "隐藏问题"],
+      "triggers_hidden_issue": true,
+      "follow_up_questions": [
+        "具体是什么原因？",
+        "你期望新公司给你什么？",
+        "你怎么看上家公司的发展？"
+      ],
+      "expected_answer_points": [
+        "明确的离职原因",
+        "积极的职业规划",
+        "对新公司的期待",
+        "不抱怨前公司"
+      ],
+      "red_flags": [
+        "抱怨前公司",
+        "没有明确原因",
+        "只谈负面",
+        "期望不切实际"
+      ],
+      "ai_candidate_response": {
+        "surface": "我希望有更好的职业发展空间，上家公司的发展速度比较慢，我希望能在更大的平台发挥我的能力。",
+        "under_pressure": "其实是因为绩效不达标，有点待不下去了。但我不能这么说，所以就说'个人发展'。",
+        "exposed": true
+      }
+    }
+  ],
+  "evaluation_criteria": {
+    "question_quality": {
+      "relevance": 15,
+      "depth": 15,
+      "coverage": 10
+    },
+    "hidden_issue_discovery": {
+      "weight": 25,
+      "total_issues": 2,
+      "expected_discovery": 1
+    },
+    "control": {
+      "time_management": 5,
+      "topic_guidance": 5,
+      "conflict_handling": 5
+    },
+    "compliance": {
+      "weight": 10,
+      "no_privacy_questions": true
+    },
+    "candidate_experience": {
+      "professionalism": 5,
+      "rapport": 5
+    }
+  }
+}

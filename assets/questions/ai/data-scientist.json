@@ -1,0 +1,308 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "industry": "智能制造/AI",
+    "role": "数据科学家",
+    "last_updated": "2026-03-11",
+    "contributors": ["openclaw"],
+    "total_questions": 10
+  },
+  "questions": [
+    {
+      "id": "ai-ds-001",
+      "question": "请介绍一个你负责的机器学习项目",
+      "category": "项目经验",
+      "difficulty": "L2",
+      "tags": ["STAR", "追问", "ML"],
+      "scenario": "数据科学家面试",
+      "triggers_hidden_issue": true,
+      "hidden_issue_type": "业务理解能力弱",
+      "follow_up_questions": [
+        "具体是什么业务场景？",
+        "你的角色是什么？",
+        "你做了什么？",
+        "结果如何？"
+      ],
+      "expected_answer_points": [
+        "业务背景和目标",
+        "个人角色和贡献",
+        "技术方案选择",
+        "业务影响和结果"
+      ],
+      "red_flags": [
+        "只谈技术，不谈业务",
+        "无法量化业务价值",
+        "项目失败原因不清楚"
+      ],
+      "source": "原创",
+      "contributor": "openclaw",
+      "created_at": "2026-03-11",
+      "verified": true
+    },
+    {
+      "id": "ai-ds-002",
+      "question": "你怎么处理数据不平衡的问题？",
+      "category": "技术能力",
+      "difficulty": "L2",
+      "tags": ["ML", "数据处理", "追问"],
+      "scenario": "数据科学家面试",
+      "triggers_hidden_issue": false,
+      "follow_up_questions": [
+        "你试过哪些方法？",
+        "效果如何？",
+        "为什么选择这个方法？"
+      ],
+      "expected_answer_points": [
+        "理解不平衡问题",
+        "采样方法（过采样/欠采样）",
+        "算法调整（类别权重）",
+        "评估指标选择"
+      ],
+      "red_flags": [
+        "只知道一种方法",
+        "不理解不同方法的优劣",
+        "没有实际经验"
+      ],
+      "source": "社区贡献",
+      "contributor": "openclaw",
+      "created_at": "2026-03-11",
+      "verified": true
+    },
+    {
+      "id": "ai-ds-003",
+      "question": "你怎么理解特征工程？",
+      "category": "技术能力",
+      "difficulty": "L2",
+      "tags": ["ML", "特征工程", "追问"],
+      "scenario": "数据科学家面试",
+      "triggers_hidden_issue": false,
+      "follow_up_questions": [
+        "你常用的特征工程方法有哪些？",
+        "你怎么选择特征？",
+        "怎么评估特征重要性？"
+      ],
+      "expected_answer_points": [
+        "特征提取方法",
+        "特征选择标准",
+        "特征变换技巧",
+        "领域知识结合"
+      ],
+      "red_flags": [
+        "理解浮于表面",
+        "没有实际项目经验",
+        "无法举例说明"
+      ],
+      "source": "原创",
+      "contributor": "openclaw",
+      "created_at": "2026-03-11",
+      "verified": true
+    },
+    {
+      "id": "ai-ds-004",
+      "question": "你怎么评估模型性能？",
+      "category": "技术能力",
+      "difficulty": "L2",
+      "tags": ["ML", "模型评估", "追问"],
+      "scenario": "数据科学家面试",
+      "triggers_hidden_issue": false,
+      "follow_up_questions": [
+        "你用哪些指标？",
+        "怎么处理精度和召回的权衡？",
+        "怎么验证模型的泛化能力？"
+      ],
+      "expected_answer_points": [
+        "评估指标选择（准确率、召回率、F1）",
+        "交叉验证方法",
+        "A/B 测试",
+        "业务指标映射"
+      ],
+      "red_flags": [
+        "只知道准确率",
+        "不理解业务场景对指标的影响",
+        "没有实际验证经验"
+      ],
+      "source": "社区贡献",
+      "contributor": "openclaw",
+      "created_at": "2026-03-11",
+      "verified": true
+    },
+    {
+      "id": "ai-ds-005",
+      "question": "你遇到过模型过拟合的问题吗？怎么解决的？",
+      "category": "问题解决",
+      "difficulty": "L3",
+      "tags": ["ML", "问题解决", "STAR"],
+      "scenario": "数据科学家面试",
+      "triggers_hidden_issue": false,
+      "follow_up_questions": [
+        "具体是什么场景？",
+        "你怎么发现过拟合的？",
+        "你用了哪些方法？",
+        "效果如何？"
+      ],
+      "expected_answer_points": [
+        "过拟合现象识别",
+        "解决方案（正则化、Dropout、早停）",
+        "验证集使用",
+        "最终效果"
+      ],
+      "red_flags": [
+        "没有实际经验",
+        "解决方案不完整",
+        "无法量化效果"
+      ],
+      "source": "原创",
+      "contributor": "openclaw",
+      "created_at": "2026-03-11",
+      "verified": true
+    },
+    {
+      "id": "ai-ds-006",
+      "question": "你和业务团队怎么协作？",
+      "category": "软技能",
+      "difficulty": "L2",
+      "tags": ["沟通", "协作", "追问"],
+      "scenario": "数据科学家面试",
+      "triggers_hidden_issue": false,
+      "follow_up_questions": [
+        "你怎么理解业务需求？",
+        "遇到分歧怎么处理？",
+        "怎么向非技术人员解释模型？"
+      ],
+      "expected_answer_points": [
+        "业务理解能力",
+        "沟通技巧",
+        "冲突处理",
+        "结果展示方法"
+      ],
+      "red_flags": [
+        "只关注技术，忽视业务",
+        "沟通能力弱",
+        "无法举例说明"
+      ],
+      "source": "社区贡献",
+      "contributor": "openclaw",
+      "created_at": "2026-03-11",
+      "verified": true
+    },
+    {
+      "id": "ai-ds-007",
+      "question": "你怎么保持对新技术的学习？",
+      "category": "软技能",
+      "difficulty": "L1",
+      "tags": ["学习", "成长"],
+      "scenario": "数据科学家面试",
+      "triggers_hidden_issue": false,
+      "follow_up_questions": [
+        "你最近学了什么新技术？",
+        "怎么学的？",
+        "怎么应用到工作中？"
+      ],
+      "expected_answer_points": [
+        "学习渠道（论文、博客、课程）",
+        "学习方法和习惯",
+        "实践应用",
+        "持续改进意识"
+      ],
+      "red_flags": [
+        "学习渠道单一",
+        "没有实际应用",
+        "对新领域不感兴趣"
+      ],
+      "source": "原创",
+      "contributor": "openclaw",
+      "created_at": "2026-03-11",
+      "verified": true
+    },
+    {
+      "id": "ai-ds-008",
+      "question": "你用过哪些深度学习框架？",
+      "category": "技术能力",
+      "difficulty": "L1",
+      "tags": ["DL", "框架", "追问"],
+      "scenario": "数据科学家面试",
+      "triggers_hidden_issue": false,
+      "follow_up_questions": [
+        "你最喜欢哪个框架？",
+        "为什么？",
+        "你用它做过什么项目？"
+      ],
+      "expected_answer_points": [
+        "框架熟悉度（TensorFlow、PyTorch 等）",
+        "实际项目经验",
+        "框架选择理由",
+        "深度理解"
+      ],
+      "red_flags": [
+        "只说名字，不了解细节",
+        "没有实际项目经验",
+        "只知道一个框架"
+      ],
+      "source": "社区贡献",
+      "contributor": "openclaw",
+      "created_at": "2026-03-11",
+      "verified": true
+    },
+    {
+      "id": "ai-ds-009",
+      "question": "你怎么处理缺失数据？",
+      "category": "技术能力",
+      "difficulty": "L2",
+      "tags": ["数据处理", "追问"],
+      "scenario": "数据科学家面试",
+      "triggers_hidden_issue": false,
+      "follow_up_questions": [
+        "你判断缺失的原因是什么？",
+        "你用了哪些方法？",
+        "为什么选择这个方法？"
+      ],
+      "expected_answer_points": [
+        "缺失类型识别（MCAR/MAR/MNAR）",
+        "处理方法（删除/填充/插值）",
+        "方法选择理由",
+        "对模型的影响"
+      ],
+      "red_flags": [
+        "只会删除或填充均值",
+        "不理解不同方法的优劣",
+        "没有实际经验"
+      ],
+      "source": "原创",
+      "contributor": "openclaw",
+      "created_at": "2026-03-11",
+      "verified": true
+    },
+    {
+      "id": "ai-ds-010",
+      "question": "你做过 A/B 测试吗？怎么设计的？",
+      "category": "项目经验",
+      "difficulty": "L3",
+      "tags": ["实验设计", "STAR", "追问"],
+      "scenario": "数据科学家面试",
+      "triggers_hidden_issue": true,
+      "hidden_issue_type": "业务理解能力弱",
+      "follow_up_questions": [
+        "具体的实验目标是什么？",
+        "你怎么设计实验？",
+        "怎么确定样本量？",
+        "结果如何？"
+      ],
+      "expected_answer_points": [
+        "实验假设",
+        "实验设计（对照组、变量控制）",
+        "样本量计算",
+        "结果分析和决策"
+      ],
+      "red_flags": [
+        "没有实际经验",
+        "实验设计不完整",
+        "无法量化结果",
+        "忽视业务目标"
+      ],
+      "source": "社区贡献",
+      "contributor": "openclaw",
+      "created_at": "2026-03-11",
+      "verified": true
+    }
+  ]
+}

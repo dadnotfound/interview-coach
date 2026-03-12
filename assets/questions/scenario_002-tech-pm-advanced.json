@@ -1,0 +1,276 @@
+{
+  "meta": {
+    "version": "1.0.0-mvp",
+    "scenario_id": "scenario_002",
+    "scenario_name": "产品经理复试",
+    "industry": "互联网/科技",
+    "role": "产品经理",
+    "difficulty": "L2",
+    "estimated_duration": "45 分钟",
+    "question_count": 7,
+    "created_at": "2026-03-11"
+  },
+  "hidden_issues": [
+    {
+      "type": "离职真相",
+      "description": "离职真实原因是'绩效不达标'，但会说是'个人发展'",
+      "trigger_signals": ["转移话题", "模糊回答", "重复强调'个人发展'"],
+      "detection_method": "追问具体离职原因和绩效情况"
+    },
+    {
+      "type": "主导项目夸大",
+      "description": "简历上的'主导项目'实际个人贡献 < 20%",
+      "trigger_signals": ["停顿", "过度解释细节", "无法回答具体角色"],
+      "detection_method": "追问具体职责和贡献"
+    }
+  ],
+  "questions": [
+    {
+      "id": "tech-pm-002-01",
+      "question": "你为什么要离开现在的公司？",
+      "category": "离职原因",
+      "difficulty": "L2",
+      "tags": ["追问", "隐藏问题"],
+      "triggers_hidden_issue": true,
+      "follow_up_questions": [
+        "具体是什么原因？",
+        "你在现公司的绩效怎么样？",
+        "你期望新公司给你什么？",
+        "你怎么看上家公司的发展？"
+      ],
+      "expected_answer_points": [
+        "明确的离职原因",
+        "积极的职业规划",
+        "对新公司的期待",
+        "不抱怨前公司"
+      ],
+      "red_flags": [
+        "抱怨前公司",
+        "没有明确原因",
+        "只谈负面",
+        "期望不切实际"
+      ],
+      "ai_candidate_response": {
+        "surface": "我希望有更好的职业发展空间，上家公司的发展速度比较慢，我希望能在更大的平台发挥我的能力。而且我也想接触更多元化的产品。",
+        "under_pressure": "其实是因为绩效不达标，有点待不下去了。但我不能这么说，所以反复强调'个人发展'。",
+        "exposed": true
+      }
+    },
+    {
+      "id": "tech-pm-002-02",
+      "question": "你主导过哪些产品项目？",
+      "category": "项目经验",
+      "difficulty": "L2",
+      "tags": ["STAR", "追问", "隐藏问题"],
+      "triggers_hidden_issue": true,
+      "follow_up_questions": [
+        "你在这个项目中的具体角色是什么？",
+        "你负责哪些部分？",
+        "你怎么定义'主导'？",
+        "团队规模多大？"
+      ],
+      "expected_answer_points": [
+        "明确的角色定义",
+        "具体的贡献",
+        "领导力体现",
+        "可量化结果"
+      ],
+      "red_flags": [
+        "角色模糊",
+        "夸大个人贡献",
+        "无法量化结果",
+        "团队规模夸大"
+      ],
+      "ai_candidate_response": {
+        "surface": "我主导过一个战略级产品，从需求分析到上线都由我负责。团队有 10 个人，我协调产品、设计、开发和测试。",
+        "under_pressure": "其实我只是项目负责人，核心功能和技术实现都是其他同事负责。我的主要工作是开会和写文档。团队其实有 20 个人，我不太确定具体人数。",
+        "exposed": true
+      }
+    },
+    {
+      "id": "tech-pm-002-03",
+      "question": "你遇到过最大的产品决策困难是什么？",
+      "category": "决策能力",
+      "difficulty": "L3",
+      "tags": ["STAR", "追问", "决策能力"],
+      "triggers_hidden_issue": false,
+      "follow_up_questions": [
+        "具体是什么困难？",
+        "你怎么收集信息？",
+        "你做了哪些分析？",
+        "最终决策是什么？",
+        "结果如何？"
+      ],
+      "expected_answer_points": [
+        "复杂场景描述",
+        "信息收集方法",
+        "分析框架",
+        "决策依据",
+        "结果和反思"
+      ],
+      "red_flags": [
+        "没有具体案例",
+        "决策过程简单",
+        "没有数据支撑",
+        "没有反思"
+      ],
+      "ai_candidate_response": {
+        "surface": "最大的困难是在两个功能之间做选择，资源只够做一个。我分析了用户需求、技术可行性和商业价值，最终选择了优先级更高的功能。",
+        "under_pressure": null,
+        "exposed": false
+      }
+    },
+    {
+      "id": "tech-pm-002-04",
+      "question": "你怎么处理产品优先级冲突？",
+      "category": "优先级管理",
+      "difficulty": "L2",
+      "tags": ["追问", "优先级"],
+      "triggers_hidden_issue": false,
+      "follow_up_questions": [
+        "具体的冲突是什么？",
+        "你怎么权衡？",
+        "你用了哪些方法？",
+        "怎么和团队沟通？"
+      ],
+      "expected_answer_points": [
+        "冲突描述",
+        "权衡标准",
+        "决策方法（RICE、Kano 等）",
+        "沟通技巧",
+        "结果"
+      ],
+      "red_flags": [
+        "没有具体方法",
+        "只靠直觉",
+        "沟通能力弱",
+        "无法量化结果"
+      ],
+      "ai_candidate_response": {
+        "surface": "我会用 RICE 模型来评估优先级，同时考虑业务价值和技术成本。如果团队有分歧，我会组织会议，让相关方充分讨论，最终达成共识。",
+        "under_pressure": null,
+        "exposed": false
+      }
+    },
+    {
+      "id": "tech-pm-002-05",
+      "question": "你用过哪些数据分析工具？",
+      "category": "技术能力",
+      "difficulty": "L1",
+      "tags": ["技术", "追问"],
+      "triggers_hidden_issue": true,
+      "follow_up_questions": [
+        "你用这些工具做过什么分析？",
+        "怎么支持的决策？",
+        "你熟悉 SQL 吗？",
+        "你做过哪些数据清洗？"
+      ],
+      "expected_answer_points": [
+        "工具熟悉度",
+        "实际应用经验",
+        "分析能力",
+        "技术深度"
+      ],
+      "red_flags": [
+        "只说工具名称",
+        "没有实际应用",
+        "技术深度不足",
+        "夸大能力"
+      ],
+      "ai_candidate_response": {
+        "surface": "我经常用 SQL、Excel 和一些 BI 工具做数据分析。比如我会用 SQL 提取数据，用 Excel 做可视化，用 BI 工具生成报表。",
+        "under_pressure": "其实我只会简单的查询和制表，复杂的数据清洗和高级分析都需要数据科学家帮忙。我对 SQL 也只是了解基础语法。",
+        "exposed": true
+      }
+    },
+    {
+      "id": "tech-pm-002-06",
+      "question": "你和跨部门团队怎么合作？",
+      "category": "协作能力",
+      "difficulty": "L2",
+      "tags": ["协作", "追问"],
+      "triggers_hidden_issue": false,
+      "follow_up_questions": [
+        "你怎么建立合作关系？",
+        "遇到分歧怎么处理？",
+        "你怎么协调资源？",
+        "举例说明一次成功的跨部门合作"
+      ],
+      "expected_answer_points": [
+        "关系建立",
+        "冲突处理",
+        "资源协调",
+        "沟通技巧",
+        "结果导向"
+      ],
+      "red_flags": [
+        "关系紧张",
+        "只强调自己的需求",
+        "无法协调资源",
+        "没有具体案例"
+      ],
+      "ai_candidate_response": {
+        "surface": "我会定期和各部门开会，了解他们的需求和困难。如果有分歧，我会用数据和用户需求来协调。我平时也会主动帮助其他部门，建立良好的合作关系。",
+        "under_pressure": null,
+        "exposed": false
+      }
+    },
+    {
+      "id": "tech-pm-002-07",
+      "question": "你对未来 3 年的产品职业规划是什么？",
+      "category": "职业规划",
+      "difficulty": "L2",
+      "tags": ["职业发展", "追问"],
+      "triggers_hidden_issue": false,
+      "follow_up_questions": [
+        "你希望成为什么样的产品经理？",
+        "你需要提升哪些能力？",
+        "你为什么选择我们公司？",
+        "你期望我们给你什么机会？"
+      ],
+      "expected_answer_points": [
+        "清晰的职业目标",
+        "自我认知",
+        "公司匹配度",
+        "成长预期",
+        "积极性"
+      ],
+      "red_flags": [
+        "没有明确规划",
+        "只关注短期利益",
+        "对公司不了解",
+        "期望不切实际"
+      ],
+      "ai_candidate_response": {
+        "surface": "我希望在未来 3 年内成为能够独立负责一个完整产品线的产品经理。我需要提升数据分析能力和战略思维。我选择你们公司是因为这里的业务挑战很大，能让我快速成长。",
+        "under_pressure": null,
+        "exposed": false
+      }
+    }
+  ],
+  "evaluation_criteria": {
+    "question_quality": {
+      "relevance": 15,
+      "depth": 15,
+      "coverage": 10
+    },
+    "hidden_issue_discovery": {
+      "weight": 25,
+      "total_issues": 2,
+      "expected_discovery": 1
+    },
+    "control": {
+      "time_management": 5,
+      "topic_guidance": 5,
+      "conflict_handling": 5
+    },
+    "compliance": {
+      "weight": 10,
+      "no_privacy_questions": true
+    },
+    "candidate_experience": {
+      "professionalism": 5,
+      "rapport": 5
+    }
+  }
+}

@@ -1,0 +1,309 @@
+{
+  "meta": {
+    "version": "1.0.0-mvp",
+    "scenario_id": "scenario_003",
+    "scenario_name": "工程师技术面试",
+    "industry": "互联网/科技",
+    "role": "软件工程师",
+    "difficulty": "L2",
+    "estimated_duration": "60 分钟",
+    "question_count": 8,
+    "created_at": "2026-03-11"
+  },
+  "hidden_issues": [
+    {
+      "type": "技术深度不足",
+      "description": "'精通'某技术实际只是了解，没有深入理解",
+      "trigger_signals": ["停顿", "泛泛而谈", "无法深入细节", "转移话题"],
+      "detection_method": "追问技术细节和底层原理"
+    },
+    {
+      "type": "项目参与度低",
+      "description": "'负责'某模块实际只是调用 API，未深入理解",
+      "trigger_signals": ["停顿", "过度解释上层应用", "无法回答底层实现"],
+      "detection_method": "追问具体实现和原理"
+    }
+  ],
+  "questions": [
+    {
+      "id": "tech-eng-003-01",
+      "question": "请介绍一个你做过的技术项目",
+      "category": "项目经验",
+      "difficulty": "L2",
+      "tags": ["STAR", "追问", "技术深度"],
+      "triggers_hidden_issue": true,
+      "follow_up_questions": [
+        "具体是什么技术栈？",
+        "你负责哪部分？",
+        "遇到了什么技术挑战？",
+        "你怎么解决的？"
+      ],
+      "expected_answer_points": [
+        "技术栈清晰",
+        "个人角色具体",
+        "技术挑战明确",
+        "解决方案合理",
+        "有量化结果"
+      ],
+      "red_flags": [
+        "技术栈模糊",
+        "角色不具体",
+        "没有技术挑战",
+        "方案不落地"
+      ],
+      "ai_candidate_response": {
+        "surface": "我用 Node.js + React 做过一个电商后台，负责用户管理和订单模块。技术挑战是高并发处理，我用了 Redis 缓存和消息队列来解决。",
+        "under_pressure": "其实我主要是用现成的框架和库，对底层实现不太了解。Redis 和消息队列都是照着文档配置的，遇到问题就查资料或问同事。",
+        "exposed": true
+      }
+    },
+    {
+      "id": "tech-eng-003-02",
+      "question": "你熟悉哪些后端框架？",
+      "category": "技术能力",
+      "difficulty": "L1",
+      "tags": ["技术", "追问"],
+      "triggers_hidden_issue": true,
+      "follow_up_questions": [
+        "你最熟悉哪个框架？",
+        "它的核心原理是什么？",
+        "你用它做过什么项目？",
+        "你用过它的哪些高级特性？"
+      ],
+      "expected_answer_points": [
+        "框架熟悉度",
+        "核心原理理解",
+        "实际项目经验",
+        "深度使用经验"
+      ],
+      "red_flags": [
+        "只知道名称",
+        "没有实际项目",
+        "不理解原理",
+        "只说基础功能"
+      ],
+      "ai_candidate_response": {
+        "surface": "我熟悉 Spring Boot、Express、Django 等框架。我主要用 Spring Boot，因为它生态好，开发效率高。我做过多个微服务项目，用了它的各种组件。",
+        "under_pressure": "其实我只是会用注解和自动配置，对 IoC、AOP 这些核心原理不太了解。微服务也是跟着模板配置的，不太懂分布式相关的复杂问题。",
+        "exposed": true
+      }
+    },
+    {
+      "id": "tech-eng-003-03",
+      "question": "你怎么理解微服务架构？",
+      "category": "技术能力",
+      "difficulty": "L3",
+      "tags": ["架构", "追问"],
+      "triggers_hidden_issue": true,
+      "follow_up_questions": [
+        "微服务的优缺点是什么？",
+        "你怎么拆分服务？",
+        "你怎么处理服务间通信？",
+        "你遇到过哪些分布式问题？"
+      ],
+      "expected_answer_points": [
+        "理解优缺点",
+        "拆分原则",
+        "通信方案",
+        "分布式问题解决",
+        "实际项目经验"
+      ],
+      "red_flags": [
+        "理解浮于表面",
+        "没有实际经验",
+        "只谈优点不谈缺点",
+        "无法解决实际问题"
+      ],
+      "ai_candidate_response": {
+        "surface": "微服务可以提高扩展性和解耦，但会增加复杂度。我会按业务领域拆分服务，用 REST API 通信，用服务网格管理。",
+        "under_pressure": "其实我只是了解概念，没有实际拆分过服务。服务网格也只是听过名字，不知道具体怎么用。分布式问题如分布式事务、数据一致性我都没有实际经验。",
+        "exposed": true
+      }
+    },
+    {
+      "id": "tech-eng-003-04",
+      "question": "你写过哪些技术方案？",
+      "category": "技术能力",
+      "difficulty": "L2",
+      "tags": ["设计", "追问"],
+      "triggers_hidden_issue": false,
+      "follow_up_questions": [
+        "具体是什么方案？",
+        "你怎么设计的？",
+        "考虑了哪些因素？",
+        "结果怎么样？"
+      ],
+      "expected_answer_points": [
+        "方案背景",
+        "设计思路",
+        "权衡因素",
+        "实施结果",
+        "反思"
+      ],
+      "red_flags": [
+        "没有具体方案",
+        "设计思路简单",
+        "不考虑权衡",
+        "没有实际效果"
+      ],
+      "ai_candidate_response": {
+        "surface": "我写过用户系统和订单系统的技术方案。我考虑了性能、可扩展性和团队技术栈，最终选择了现在的架构方案。",
+        "under_pressure": null,
+        "exposed": false
+      }
+    },
+    {
+      "id": "tech-eng-003-05",
+      "question": "你遇到过最难的 Bug 是什么？",
+      "category": "问题解决",
+      "difficulty": "L2",
+      "tags": ["STAR", "追问"],
+      "triggers_hidden_issue": false,
+      "follow_up_questions": [
+        "具体是什么问题？",
+        "你怎么排查的？",
+        "你用了哪些工具和方法？",
+        "怎么解决的？",
+        "你学到了什么？"
+      ],
+      "expected_answer_points": [
+        "问题描述",
+        "排查思路",
+        "工具和方法",
+        "解决方案",
+        "经验总结"
+      ],
+      "red_flags": [
+        "没有具体案例",
+        "排查方法单一",
+        "没有总结经验",
+        "依赖他人"
+      ],
+      "ai_candidate_response": {
+        "surface": "最难的 Bug 是一个并发导致的数据不一致问题。我花了两天时间排查，最终用日志分析和调试工具定位到了问题，修复后加了更多的监控。",
+        "under_pressure": null,
+        "exposed": false
+      }
+    },
+    {
+      "id": "tech-eng-003-06",
+      "question": "你怎么保证代码质量？",
+      "category": "工程能力",
+      "difficulty": "L1",
+      "tags": ["工程实践", "追问"],
+      "triggers_hidden_issue": false,
+      "follow_up_questions": [
+        "你用哪些工具？",
+        "你的 Code Review 流程是什么？",
+        "你怎么写单元测试？",
+        "你的测试覆盖率是多少？"
+      ],
+      "expected_answer_points": [
+        "工具使用",
+        "Code Review 经验",
+        "测试策略",
+        "质量意识"
+      ],
+      "red_flags": [
+        "没有工具",
+        "没有 Code Review",
+        "不写测试",
+        "覆盖率低"
+      ],
+      "ai_candidate_response": {
+        "surface": "我用 ESLint 和 Prettier 做代码规范，用 SonarQube 做静态分析。我们团队有严格的 Code Review 流程，我也写单元测试，覆盖率一般在 60-80%。",
+        "under_pressure": null,
+        "exposed": false
+      }
+    },
+    {
+      "id": "tech-eng-003-07",
+      "question": "你和产品经理怎么协作？",
+      "category": "协作能力",
+      "difficulty": "L1",
+      "tags": ["协作", "追问"],
+      "triggers_hidden_issue": false,
+      "follow_up_questions": [
+        "你怎么理解需求？",
+        "遇到不合理需求怎么办？",
+        "你怎么平衡需求和技术可行性？",
+        "举例说明一次成功的协作"
+      ],
+      "expected_answer_points": [
+        "需求理解",
+        "沟通技巧",
+        "技术意识",
+        "共赢思维",
+        "结果导向"
+      ],
+      "red_flags": [
+        "只强调技术",
+        "不沟通就拒绝",
+        "缺乏共赢意识",
+        "没有具体案例"
+      ],
+      "ai_candidate_response": {
+        "surface": "我会先充分理解需求，如果觉得技术上不可行，我会和产品经理讨论，看看有没有替代方案。我认为技术和产品是互相成就的，要找到平衡点。",
+        "under_pressure": null,
+        "exposed": false
+      }
+    },
+    {
+      "id": "tech-eng-003-08",
+      "question": "你最近在学习什么新技术？",
+      "category": "学习能力",
+      "difficulty": "L1",
+      "tags": ["学习", "成长"],
+      "triggers_hidden_issue": false,
+      "follow_up_questions": [
+        "你为什么学这个技术？",
+        "你怎么学的？",
+        "怎么应用的？",
+        "你觉得它的优缺点是什么？"
+      ],
+      "expected_answer_points": [
+        "学习动机",
+        "学习方法",
+        "实践应用",
+        "深度思考",
+        "持续学习意识"
+      ],
+      "red_flags": [
+        "没有学习新东西",
+        "学习方法被动",
+        "没有实践",
+        "没有深度思考"
+      ],
+      "ai_candidate_response": {
+        "surface": "最近在学习 Rust 和 WebAssembly，因为它们能提升前端性能。我通过官方文档和实战项目来学习，目前还在探索阶段。",
+        "under_pressure": null,
+        "exposed": false
+      }
+    }
+  ],
+  "evaluation_criteria": {
+    "question_quality": {
+      "relevance": 15,
+      "depth": 15,
+      "coverage": 10
+    },
+    "hidden_issue_discovery": {
+      "weight": 25,
+      "total_issues": 2,
+      "expected_discovery": 1
+    },
+    "control": {
+      "time_management": 5,
+      "topic_guidance": 5,
+      "conflict_handling": 5
+    },
+    "compliance": {
+      "weight": 10,
+      "no_privacy_questions": true
+    },
+    "candidate_experience": {
+      "professionalism": 5,
+      "rapport": 5
+    }
+  }
+}
