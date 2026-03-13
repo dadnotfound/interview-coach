@@ -532,20 +532,6 @@ interview-coach/
 
 ## 🌍 社区与支持
 
-### 获取帮助
-
-- **GitHub Issues：** [提交问题](https://github.com/dadnotfound/interview-coach/issues)
-- **Discord：** [加入社区](https://discord.gg/clawd)
-- **邮箱：** support@example.com
-
-### 分享经验
-
-- **博客文章：** 介绍使用心得
-- **视频教程：** 制作教学视频
-- **社交媒体：** 分享进步曲线
-- **社区分享：** 在社区分享面试技巧
-
----
 
 ## 📄 开源协议
 
@@ -619,12 +605,10 @@ interview-coach/
 
 **版本：** 1.0.0-mvp  
 **最后更新：** 2026-03-12  
-**作者：** 赵浩 + 虾球（AI助手）  
+**作者：** dadnotfound
 **License：** MIT
 
 ---
 
 **让每一次面试都更专业，让招聘更准确，让团队更强大！** 🚀
 
-**OpenClaw 集成版：** https://openclaw.ai/  
-**ClawHub 页面：** https://clawhub.com/skill/interview-coach
